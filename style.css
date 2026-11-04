@@ -89,8 +89,8 @@ li {
          table, th, td {border: 1px solid black;}
          caption {font-weight:bold; color: blue}
          th {background-color: yellow;}
-         td {text-align: center;background-color: #e6f2ff; color: #333333; }
-        
+         td {text-align: center;}
+
 /* Piè di pagina */
 footer {
     padding: 15px;
