@@ -86,19 +86,12 @@ li {
     outline-offset: 4px;
 }
 
-         meta charset="UTF-8">
-         <title>Le tabelle</title>
-         <style>
+        
          table, th, td {border: 1px solid black;}
          caption {font-weight:bold; color: blue}
          th {background-color: yellow;}
          td {text-align: center;background-color: #e6f2ff; color: #333333; }
-         </style> 
-     </head>
-<body>
-    <table style="width: 50%" >
-    <caption>TABELLA DI PROVA</caption>
-    <tr> 
+        
 
 /* Piè di pagina */
 footer {
