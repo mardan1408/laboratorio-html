@@ -5,72 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La mia scheda personale</title>
     <link rel="stylesheet" href="style.css">
-    </head>
+</head>
 <body>
     <!-- Intestazione della pagina -->
     <header>
         <h1>Mi presento!</h1>
         <p>La mia prima pagina con HTML e CSS</p>
-</header>
-<!-- Contenuto principale -->
-<main>
-    <article class="scheda">
-        <h2>Daniele Martino</h2>
-        <p class="descrizione">
-            Ciao! Sono Daniele, frequento un corso di informatica
-            e sto imparando a creare pagine web.
-        </p>
-        <h3>I miei interessi</h3>
-        <ul>
-            <li>Programmazione</li>
-            <li>Musica</li>
-            <li>Sport</li>
-        </ul>
-        <p>
-           Il mio obiettivo è
-           <strong>creare il mio primo sito web</strong>.
-       </p>
-       <a class="pulsante" href="mailto:daniele@example.com">
-           Scrivimi
-       </a>
-     
-       <h3>I miei obiettivi</h3>
-       <ol>
-           <li>Imparare l'HTML</li>
-           <li>Imparare il CSS</li>
-           <li>Creare il mio primo sito</li>
-       </ol>
+        
+        <!-- NUOVO ELEMENTO: Menu di navigazione -->
+        <nav>
+            <a href="#presentazione">Chi Sono</a> | 
+            <a href="#interessi">Interessi</a> | 
+            <a href="#obiettivi">Obiettivi</a> | 
+            <a href="#dati">Dati</a>
+        </nav>
+    </header>
 
-       <h3>Piccolo glossario</h3>
-       <dl>
-           <dt>HTML</dt>
-           <dd>Linguaggio per strutturare le pagine web</dd>
-           <dt>CSS</dt>
-           <dd>Linguaggio per dare stile alle pagine</dd>
-       </dl>
-       <table>
-       <caption>Tabella di prova</caption>
-    <tr>
-        <th>città</th>
-        <th>temperatura</th>
-        <th>umidità</th>
-    </tr>
-    <tr>
-        <td>Bolzano</td>
-        <td>-1°C</td>
-        <td>35%</td>
-    </tr>
-    <tr>
-        <td>Palermo</td>
-        <td>22°C</td>
-        <td>67%</td>
-    </tr>
-    </table>  
-    </article>
-</main>
-<!-- Piè di pagina -->
-<footer>
-    <p>Esercitazione di laboratorio — HTML e CSS</p>
-</footer>
+    <!-- Contenuto principale -->
+    <main>
+        <article class="scheda" id="presentazione">
+            <h2>Daniele Martino</h2>
+            <p class="descrizione">
+                Ciao! Sono Daniele, frequento un corso di informatica
+                e sto imparando a <mark>creare pagine web</mark>.
+            </p>
+
+            <!-- NUOVO ELEMENTO: Immagine del profilo o avatar -->
+            <div class="foto-profilo">
+                <img src="https://via.placeholder.com/150" alt="Foto profilo di Daniele Martino">
+            </div>
+
+            <h3 id="interessi">I miei interessi</h3>
+            <ul>
+                <li>Programmazione</li>
+                <li>Musica</li>
+                <li>Sport</li>
+            </ul>
+            <p>
+               Il mio obiettivo è
+               <strong>creare il mio primo sito web</strong>.
+            </p>
+            <a class="pulsante" href="mailto:daniele@example.com">
+               Scrivimi
+            </a>
+         
+            <h3 id="obiettivi">I miei obiettivi</h3>
+            <ol>
+               <li>Imparare l'HTML</li>
+               <li>Imparare il CSS</li>
+               <li>Creare il mio primo sito</li>
+            </ol>
+
+            <h3>Piccolo glossario</h3>
+            <dl>
+               <dt>HTML</dt>
+               <dd>Linguaggio per strutturare le pagine web</dd>
+               <dt>CSS</dt>
+               <dd>Linguaggio per dare stile alle pagine</dd>
+            </dl>
+
+            <h3 id="dati">Tabella di prova</h3>
+            <table>
+                <caption>Confronto temperature ed umidità</caption>
+                <thead>
+                    <tr>
+                        <th>Città</th>
+                        <th>Temperatura</th>
+                        <th>Umidità</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bolzano</td>
+                        <td>-1°C</td>
+                        <td>35%</td>
+                    </tr>
+                    <tr>
+                        <td>Palermo</td>
+                        <td>22°C</td>
+                        <td>67%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- NUOVO ELEMENTO: Elemento Grafico SVG Animato -->
+            <h3>Icona interattiva (SVG)</h3>
+            <div class="svg-container">
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" class="cerchio-animato" />
+                </svg>
+            </div>
+        </article>
+    </main>
+
+    <!-- Piè di pagina -->
+    <footer>
+        <p>Esercitazione di laboratorio — HTML e CSS</p>
+    </footer>
 </body>
 </html>
