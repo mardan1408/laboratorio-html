@@ -1,102 +1,164 @@
-/* Include padding e bordi nelle dimensioni degli elementi */
+/* Regole generali */
 * {
     box-sizing: border-box;
-}
-
-/* Aspetto generale della pagina */
-body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #243247;
-    background-color: #edf2f7;
+    padding: 0;
 }
 
-/* Intestazione */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
 header {
-    padding: 30px 20px;
+    background-color: #2c3e50;
+    color: #fff;
     text-align: center;
-    color: white;
-    background-color: #244a73;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
 }
 
 header h1 {
-    margin: 0;
+    margin-bottom: 5px;
 }
 
-header p {
-    margin: 8px 0 0;
+nav {
+    margin-top: 15px;
 }
 
-/* Spazio intorno al contenuto principale */
-main {
-    padding: 30px 20px;
+nav a {
+    color: #4ca1af;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 5px;
 }
 
-/* Scheda personale */
+nav a:hover {
+    color: #fff;
+}
+
+/* Card/Scheda Principale */
 .scheda {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 25px;
-    background-color: white;
-    border: 2px solid #d3dfec;
-    border-radius: 12px;
+    background: #fff;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Nome della persona */
 .scheda h2 {
-    margin-top: 0;
-    color: #244a73;
+    color: #2c3e50;
+    border-bottom: 2px solid #4ca1af;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
-/* Paragrafo introduttivo */
+.scheda h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
 .descrizione {
-    color: #526174;
+    font-size: 1.1em;
+    margin-bottom: 15px;
 }
 
-/* Elenco degli interessi */
-ul {
-    padding-left: 25px;
+/* Foto Profilo */
+.foto-profilo img {
+    border-radius: 50%;
+    border: 3px solid #4ca1af;
+    margin: 10px 0;
 }
 
-li {
-    margin-bottom: 6px;
+/* Elenchi */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
 }
 
-/* Collegamento con aspetto di pulsante */
+dl dt {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 5px;
+}
+
+dl dd {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+/* Pulsante Scrivimi */
 .pulsante {
     display: inline-block;
-    margin-top: 12px;
-    padding: 10px 20px;
+    background-color: #4ca1af;
     color: white;
-    background-color: #244a73;
-    border-radius: 6px;
+    padding: 10px 20px;
     text-decoration: none;
+    border-radius: 5px;
+    margin: 15px 0;
+    transition: background 0.3s ease;
 }
 
-/* Aspetto del collegamento al passaggio del mouse */
 .pulsante:hover {
-    background-color: #17334f;
+    background-color: #2c3e50;
 }
 
-/* Evidenza del collegamento quando selezionato con la tastiera */
-.pulsante:focus-visible {
-    outline: 3px solid #b54e00;
-    outline-offset: 4px;
+/* Tabella */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
 }
 
-/* Piè di pagina */
-footer {
-    padding: 15px;
+caption {
+    font-weight: bold;
+    margin-bottom: 5px;
+    caption-side: top;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
     text-align: center;
-    font-size: 14px;
-    color: #526174;
 }
-table, th, td {border: 1px solid black;}
-    caption {font-weight:bold; color: blue}
-    th {background-color: yellow;}
-    td {text-align: center;}
-    font-size: 14px;
-    color: #526174;
+
+th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* SVG Animato */
+.svg-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.cerchio-animato {
+    fill: #4ca1af;
+    stroke: #2c3e50;
+    stroke-width: 4;
+    transition: all 0.5s ease;
+}
+
+.cerchio-animato:hover {
+    fill: #e74c3c;
+    r: 45;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #777;
 }
